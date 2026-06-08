@@ -38,7 +38,6 @@ router.post("/", async (req, res) => {
       account: {
         accountId: account.account_id,
         token: token,
-        password: account.password,
         name: account.name,
         icon: account.icon
       }
