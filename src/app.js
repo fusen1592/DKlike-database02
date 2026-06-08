@@ -31,7 +31,7 @@ app.use("/contents", contentRoutes);
 app.use("/votes", voteRoutes);
 app.use("/likes", likeRoutes);
 app.use("/accounts", accountRoutes);
-app.use("/accounts/Login", accountLoginRoute);
+app.use("/accounts/login", accountLoginRoute);
 app.use("/ranking", rankingRoutes);
 app.use('/', pageRoutes);
 
