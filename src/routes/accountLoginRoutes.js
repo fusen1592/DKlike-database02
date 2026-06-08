@@ -37,7 +37,7 @@ router.post("/", async (req, res) => {
       message: 'Authentication successful.',
       account: {
         accountId: account.account_id,
-        token: token,
+        token: account.token,
         name: account.name,
         icon: account.icon
       }
