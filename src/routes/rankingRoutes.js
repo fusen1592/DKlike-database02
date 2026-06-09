@@ -4,7 +4,14 @@ const { query } = require("../database");
 
 router.get("/", async (req, res) => {
   try {
-    const { chartHash, difficulty } = req.query;
+    let { chartHash, difficulty } = req.query;
+
+    const cleanString = (str) => {
+      if (!str) return str;
+      // 正規表現で「目に見えないゼロ幅文字」をすべて空文字に置き換えます
+      return str.replace(/[\u200B-\u200D\uFEFF]/g, '').trim();
+    };
+    chartHash = cleanString(chartHash)
 
     if (!chartHash || !difficulty) {
       res.status(400).json({
