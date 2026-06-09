@@ -1,30 +1,63 @@
-Hi, Wicky's here!
+## 導入
+初めまして、譜面製作歴5年半でダンカグライク累計約400譜面（合作含む）を作ったFUSENです。
 
-Welcome to DKLike API Server template!
+## 始めましての方へ
+さて、これほどの多くの譜面が存在してしまうと新たにこのサーバーに入ったプレイヤーが全ての譜面をプレイすることは不可能でしょう。
+これを考慮し、今までの譜面から自分や他人から良作といわれたものを10曲程度選びました。
+初めてプレイする人はまず”始めてFUSEN譜面を触る人へのおすすめ”のF’s start packをやることをお勧めします。
 
-**Version**: 1.1.0a1
+## ある程度触った人へ
+F’s start packはある程度しっかりしていますがだいたいはゴミ譜面作っていますので期待しないでもらえると嬉しいです。
+また、もっとやりたい人は準おすすめパック(pre recommend pack)をプレイしてもらえると嬉しいです
 
-<!-- > [!WARNING]  
-> No more new features will be added after this point except for bugs. You are responsible for your own modified code from this template. -->
+## 規約
+大前提:全ての行為はプレイヤーに言及しFUSENは一切の責任を負いません。また、以下のOKなことを行った時点で同意したとします。
+また、NGなことを行った時点でFUSENにかかわるすべての行為を禁じます。
 
-## About DankaguLike
+↓OKなこと
+・FUSENが製作した譜面のリザルトを投稿すること（自己責任）
+・FUSENが製作した譜面のプレイ動画を投稿すること（自己責任）
+・FUSENが製作した譜面の裏譜面またはrescoreをする行為（自己責任）
 
-DankaguLike is a fan-made Touhou rhythm game that is a revival of the original end-of-service game Touhou Danmaku Kagura.
+↓NGなこと
+・二次配布をする行為
+・第三者がFUSENの名を使い譜面投稿する行為
+・第三者がFUSEN譜面を自作発言し投稿する行為（例として、FUSEN譜面をほかの人が譜面制作者名を変えて2次配布することをさします）
+・譜面製作に関しての個人的の主張を大々的に主張し、一部の譜面を悪という決めつけを行う思想や宗教を行い譜面製作コミュニティーに害を及ぼす行為
 
-## About DKLike API Server
+## フォルダーの詳細
+フォルダーが多すぎて詳細がわからないと思うので詳細説明を以下に明記しました。
+始めてFUSEN譜面を触る人へのおすすめ→FUSEN譜面を触ったことない人向けの譜面傾向を把握するためのもの（正統派？譜面多め）
+FUSENが好きな譜面→今まで作った中でFUSEN個人が好きだと思う譜面且つF’s start packに入っていない譜面（変な譜面やりたい人向け）
+単体作パック(puc pack)→FUSEN個人で出したパッケージが入ったもの
+単体作品(public) →今まで作った中でFUSEN単体作として出しているもの(譜面定数調整済)
+一括ダウンロード(easy download)→単体作品や合作などの大容量ファイルを一括でダウンロードできるもの
+旧ファイル(old property)→昔のファイルを集めたもの(ファイルの整合性に問題があった場合に利用するもの)
+合作(not public)→FUSENが参加した単発合作のもの
+他パック収録単体作or合作(pack) →FUSENが参加したパッケージ企画に単体作品や合作として出しているもの
+段位道場(dan)→以前に出していた３曲連続でプレイしスコアを競うもの
+没譜面(trash chart)→イベントなどで悪質と言われた譜面や面白くないネタ譜面が収録され本来は非公開にするようもの
 
-This is a custom server template for DankaguLike where you can host charts made by users remotely online.
+## 譜面製作理念
+大前提:どんな譜面でも尊重されるべきである
+正統派とは重心が中心であり可動域が中心を超えることが少ないまたはない譜面を指す
+また、独自の味を出す譜面を作るにはまずはレギュ違反や交差や多指などを駆使して様々な配置を試験的配置し様々なアイデアを出す。
+その次にレギュに収まるように調整することで新たな案が完成する。
+また、良い譜面を作るには１曲ごとに譜面テーマを決める（タップ主体→正統派物量や可動域を広げた様々な連打を駆使する、
+ファジー→持ち替えや直覚的な配置により様々な運指の案が出るようにするとよい、
+ロングノーツ→まずは可動域を定め誘導を丁寧にする）
+また盛り込みすぎるとテーマがずれ良い譜面にならないので注意。
 
-Using SQLite (sqlite3) as database provider & Express.js as web framework.
+## 調整中一覧
+147作目のDESTRUCTION 321のluaが正常に動作しない不具合（現在は応急処置としてluaなしverが入っています）
 
-Original instruction: [https://dankag-like.web.app/custom-server](https://dankag-like.web.app/custom-server)
+## update
+2026/6/9 APIサーバーが一時的に復活しました。
+なお、以前のバックアップしたものが入っているので不完全であり暫定版です。
 
-## How to make your own server from this code
+2026/6/2　及び”単体作品(public)”内のファルダー名変更し、譜面定数を再調整し本家準拠にしました
+（これにより詐称や逆詐称の譜面が大幅に減りました）。
+また、フォルダー階層を刷新し視覚的にわかるように変更しました。
 
-Follow the instruction from this document that I made here: [https://docs.google.com/document/d/1K4AzgyUL6M3_fGBfq7wp-eMjqApQONYDXInfTLPz8dI/edit?tab=t.0#heading=h.ymhzddga2h9m](https://docs.google.com/document/d/1K4AzgyUL6M3_fGBfq7wp-eMjqApQONYDXInfTLPz8dI/edit?tab=t.0#heading=h.ymhzddga2h9m) (currently outdated, will be updated later)
-
-## Changelog
-- 1.1.0a1: Add accounts & ranking.
-- 1.0.5: Added Vercel support
-- 1.0.4: Added pagination
-- 1.0.3: Mobile UI support (responsive update)
+## 参考文献
+https://docs.google.com/document/d/1K4AzgyUL6M3_fGBfq7wp-eMjqApQONYDXInfTLPz8dI/edit?tab=t.0#heading=h.ymhzddga2h9m　著者:wicky
